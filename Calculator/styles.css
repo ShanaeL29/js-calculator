@@ -16,14 +16,34 @@
     padding-left: 1%;
 }
 
-.input {
+.window {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.result {
     width: 100%;
     background-color: inherit;
     font-size: 2rem;
+    font-family: monospace;
     color: inherit;
-    padding: 5%;
+    padding: 2%;
     margin: .5%;
+    border: none;
 }
+
+.input{
+    width: 100%;
+    background-color: inherit;
+    font-size: 2rem;
+    font-family: monospace;
+    color: inherit;
+    padding: 2%;
+    margin: .5%;
+    border: none;
+}
+
 
 .button-group {
     display: flex;
@@ -49,6 +69,15 @@
     background-color: #514a4a;
 }
 
+.operator:active {
+    background-color: #292824;
+}
+
+.number:active {
+    opacity: 40%;
+    border-color: #514a4a;
+}
+
 .clear-button {
     width: 50%;
 }
@@ -65,4 +94,8 @@
 .equal:hover {
     background-color: #00bfff;
     opacity: 90%;
+}
+
+.equal:active {
+    opacity: 70%;
 }
